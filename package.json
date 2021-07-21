@@ -1,7 +1,7 @@
 {
   "name": "node-addon-electron",
-  "version": "0.1.0",
-  "description": "C++ Addons TypeScript",
+  "version": "1.0.0",
+  "description": "C++ node addons in electron angular project",
   "main": "index.js",
   "engines": {
     "node": ">=12"
@@ -12,7 +12,7 @@
     "build": "rimraf dist && tsc -b",
     "ts": "ts-node",
     "addon:init": "node-gyp configure",
-    "addon:build": "node-gyp build && ts-node bin/addon.ts",
+    "build:addon": "node-gyp build && ts-node bin/addon.ts",
     "start": "ts-node src/index"
   },
   "dependencies": {

@@ -1,11 +1,5 @@
-import { test } from '../addons/addon';
-//= import { calc, test } from '../addons';
-import * as demo from '../addons/demo';
+import { xzappnodeaddon } from '../addons/addon';
 
-console.log('demo', demo);
-console.log('demo.hello', demo.hello()); // world
-
-// console.log('addon', addon);
-console.log('test.hello', test.hello()); // world
-console.log('test.foo', test.foo()); 
+console.log(xzappnodeaddon.helloWorld()); 
+console.log(xzappnodeaddon.simpleMessage()); 
 

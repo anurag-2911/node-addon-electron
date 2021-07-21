@@ -1,7 +1,4 @@
-/**
- * https://github.com/nodejs/node-addon-api
- * https://github.com/nodejs/node-addon-examples/blob/master/1_hello_world/node-addon-api/hello.cc
- */
+
 #include <napi.h>
 
 Napi::String Method(const Napi::CallbackInfo& info) {

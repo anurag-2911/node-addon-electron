@@ -1,8 +1,6 @@
-export namespace test {
-  function hello(): string;
-  function foo(): string;
+export namespace xzappnodeaddon {
+  function simpleMessage(): string;
+  function helloWorld(): string;
 }
 
-export namespace calc {
-  function loop(size?: number): Promise<number>;
-}
+

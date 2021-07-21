@@ -1,5 +1,3 @@
-# https://github.com/nodejs/node-addon-api/blob/master/doc/setup.md
-# https://github.com/nodejs/node-addon-api/blob/master/test/binding.gyp
 {
   "targets": [{
     "target_name": "demo",

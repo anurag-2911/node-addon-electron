@@ -1,6 +1,3 @@
-/**
- * https://github.com/nodejs/node-addon-examples/tree/master/2_function_arguments/node-addon-api
- */
 #include <napi.h>
 
 using namespace Napi;
@@ -11,10 +8,9 @@ Value Loop(const CallbackInfo& info) {
   Env env = info.Env();
 
   if (info.Length() != 1) {
-    // throw Error::New(env, "Message");
-    // throw RangeError::New(env, "Message");
+    
     throw TypeError::New(env, "RequiredParameter");
-    // return env.Null();
+    
   }
 
   if (!info[0].IsNumber()) {

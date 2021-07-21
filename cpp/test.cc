@@ -1,28 +1,22 @@
-/**
- * https://github.com/nodejs/node-addon-api
- * https://github.com/nodejs/node-addon-examples/blob/master/1_hello_world/node-addon-api/hello.cc
- */
 #include <napi.h>
-
-// using namespace Napi;
 
 namespace {
 
-Napi::String Hello(const Napi::CallbackInfo& info) {
+Napi::String HelloWorld(const Napi::CallbackInfo& info) {
   Napi::Env env = info.Env();
-  return Napi::String::New(env, "world");
+  return Napi::String::New(env, " hello world");
 }
 
-Napi::String Foo(const Napi::CallbackInfo& info) {
+Napi::String SimpleMessage(const Napi::CallbackInfo& info) {
   Napi::Env env = info.Env();
-  return Napi::String::New(env, "bar");
+  return Napi::String::New(env, "hello there!");
 }
 
-}  // anonymous namespace
+}  
 
 Napi::Object InitTest(Napi::Env env) {
   Napi::Object exports = Napi::Object::New(env);
-  exports.Set(Napi::String::New(env, "foo"), Napi::Function::New(env, Foo));
-  exports.Set(Napi::String::New(env, "hello"), Napi::Function::New(env, Hello));
+  exports.Set(Napi::String::New(env, "simpleMessage"), Napi::Function::New(env, SimpleMessage));
+  exports.Set(Napi::String::New(env, "helloWorld"), Napi::Function::New(env, HelloWorld));
   return exports;
 }

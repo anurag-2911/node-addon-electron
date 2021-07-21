@@ -1,8 +1,3 @@
-/**
- * https://nodejs.org/api/addons.html
- * https://github.com/nodejs/node-addon-examples
- */
-
 // hello.cc
 #include <node.h>
 
@@ -28,4 +23,4 @@ void Initialize(Local<Object> exports) {
 
 NODE_MODULE(NODE_GYP_MODULE_NAME, Initialize)
 
-}  // namespace demo
+}  
