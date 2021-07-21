@@ -1,5 +1,6 @@
 {
-  "targets": [{
+  "targets": [
+    {
     "target_name": "demo",
     "sources": [ "./cpp/hello.cc" ]
   }, 
