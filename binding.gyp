@@ -2,7 +2,8 @@
   "targets": [{
     "target_name": "demo",
     "sources": [ "./cpp/hello.cc" ]
-  }, {
+  }, 
+  {
     "target_name": "addon",
     "defines": [ "NAPI_CPP_EXCEPTIONS" ], #NAPI_DISABLE_CPP_EXCEPTIONS
     "cflags!": [ "-fno-exceptions" ],
@@ -15,7 +16,7 @@
     "msvs_settings": {
       "VCCLCompilerTool": { "ExceptionHandling": 1 }
     },
-    "sources": [ "./cpp/binding.cc", "./cpp/test.cc", "./cpp/calc.cc" ],
+    "sources": [ "./cpp/binding.cc", "./cpp/test.cc"],
     "include_dirs": ["<!@(node -p \"require('node-addon-api').include\")"],
     "dependencies": ["<!(node -p \"require('node-addon-api').gyp\")"]
   }]

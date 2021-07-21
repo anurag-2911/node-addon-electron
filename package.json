@@ -11,8 +11,8 @@
     "lint": "tslint ./src/**/*.ts",
     "build": "rimraf dist && tsc -b",
     "ts": "ts-node",
-    "addon:init": "node-gyp configure",
-    "build:addon": "node-gyp build && ts-node bin/addon.ts",
+    "init:addon": "node-gyp configure",
+    "build:addon": "node-gyp rebuild && ts-node bin/addon.ts",
     "start": "ts-node src/index"
   },
   "dependencies": {
