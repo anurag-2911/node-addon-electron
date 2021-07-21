@@ -1,11 +1,8 @@
 {
   "targets": [
-    {
-    "target_name": "demo",
-    "sources": [ "./cpp/hello.cc" ]
-  }, 
+    
   {
-    "target_name": "addon",
+    "target_name": "xzappaddon",
     "defines": [ "NAPI_CPP_EXCEPTIONS" ], #NAPI_DISABLE_CPP_EXCEPTIONS
     "cflags!": [ "-fno-exceptions" ],
     "cflags_cc!": [ "-fno-exceptions" ],
